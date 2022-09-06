@@ -59,7 +59,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     text: Text(" Travel Bureau",
                         style: TextStyle(color: Colors.blue,fontSize:40),),
                     duration: Duration(milliseconds: 200)),
-                ElevatedButton(
+                OutlinedButton(
+                  style: ButtonStyle(
+                    shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0))),
+                  ),
                     onPressed: () {
                       Navigator.push(
                         context,
