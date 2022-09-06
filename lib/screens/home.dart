@@ -54,10 +54,11 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Text("Stellar",style: TextStyle(color: Colors.blue,fontSize:40)),
                 TypeWriterText(
-                    text: Text("Stellar Travel Bureau",
-                        style: TextStyle(color: Colors.blue)),
-                    duration: Duration(milliseconds: 100)),
+                    text: Text(" Travel Bureau",
+                        style: TextStyle(color: Colors.blue,fontSize:40),),
+                    duration: Duration(milliseconds: 200)),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.push(
