@@ -37,4 +37,4 @@ var images = [
 var selected = 50;
 var img = "asset/earth";
 
-var date, name, phone, email,locn,indx=0;
+var date = "", name = "", phone = "", email = "", locn = "Earth", indx = 0;
