@@ -54,10 +54,10 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Stellar",style: TextStyle(color: Colors.blue,fontSize:40)),
+                Text("STELLAR",style: TextStyle(color: Color.fromARGB(255, 161, 85, 237),fontSize:40)),
                 TypeWriterText(
-                    text: Text(" Travel Bureau",
-                        style: TextStyle(color: Colors.blue,fontSize:40),),
+                    text: Text(" TRAVEL BUREAU",
+                        style: TextStyle(color: Color.fromARGB(255, 161, 85, 237),fontSize:35),),
                     duration: Duration(milliseconds: 200)),
                 OutlinedButton(
                   style: ButtonStyle(
