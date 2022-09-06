@@ -56,13 +56,13 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 Text("STELLAR",
                     style: TextStyle(
-                        color: Color.fromARGB(255, 161, 85, 237),
+                        color: Color.fromARGB(255, 138, 48, 229),
                         fontSize: 40)),
                 TypeWriterText(
                     text: Text(
                       " TRAVEL BUREAU",
                       style: TextStyle(
-                          color: Color.fromARGB(255, 161, 85, 237),
+                          color: Color.fromARGB(255, 85, 36, 134),
                           fontSize: 35),
                     ),
                     duration: Duration(milliseconds: 200)),

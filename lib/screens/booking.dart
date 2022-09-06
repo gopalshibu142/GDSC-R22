@@ -1,3 +1,4 @@
+import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
 import 'package:flutter/material.dart';
 import 'package:gdscr22/globals.dart';
 import 'package:swipe/swipe.dart';
@@ -184,6 +185,13 @@ class _BookingState extends State<Booking> {
                             children: [
                               TextButton(
                                   onPressed: () {
+                                  
+
+                                    name = "";
+                                    locn = "Earth";
+                                    phone = '';
+                                    dest = "Earth";
+                                    email = "";
                                     Navigator.pop(context);
                                   },
                                   child: Text("cancel")),
@@ -194,6 +202,16 @@ class _BookingState extends State<Booking> {
                                         width: 1.0, color: Colors.blue),
                                   ),
                                   onPressed: () {
+                                    var snackBar = SnackBar(
+                                      elevation: 0,
+              behavior: SnackBarBehavior.floating,
+              backgroundColor: Colors.transparent,
+                                        content: AwesomeSnackbarContent(
+                                            title: "Success",
+                                            message:
+                                                "Ticket Booked Successfully",
+                                            contentType: ContentType.success));
+                                            ScaffoldMessenger.of(context).showSnackBar(snackBar);
                                     print(name);
                                     dates.insert(indx, date.toString());
                                     names.insert(indx, name);
