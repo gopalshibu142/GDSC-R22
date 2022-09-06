@@ -14,5 +14,11 @@ void nav({required url, context}) {
   );
 }
 
+var dest = "Earth";
+var planets = {"Earth", "Mars","Venus" ,"Europa", "Titan","K62B" }.toList();
 var dropdownvalue = "Earth";
-var items = {"Earth","Mars","Titan","Europa","Alpha B","Venus"};
+var items = {"Earth", "Mars", "Venus", "Titan", "Europa"};
+var aimgs = {"assets/earth.jpg", "assets/mars.jpg", "assets/venus.jpg", "assets/titan.jpg", "assets/europa.jpg","assets/Kepler62B.jpg"};
+var images = aimgs.toList();
+var selected = 50;
+var img = "asset/earth";
