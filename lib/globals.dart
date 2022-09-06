@@ -14,20 +14,27 @@ void nav({required url, context}) {
   );
 }
 
+List<String> names = [];
+List<String> phones = [];
+List<String> emails = [];
+List<String> locns = [];
+List<String> dests = [];
+List<String> dates = [];
+
 var dest = "Earth";
 var planets = {"Earth", "Mars", "Venus", "Europa", "Titan", "K62B"}.toList();
 var dropdownvalue = "Earth";
 var items = {"Earth", "Mars", "Venus", "Titan", "Europa"};
-var aimgs = {
+var images = [
   "assets/earth.jpg",
   "assets/mars.jpg",
   "assets/venus.jpg",
   "assets/titan.jpg",
   "assets/europa.jpg",
   "assets/Kepler62B.jpg"
-};
-var images = aimgs.toList();
+];
+
 var selected = 50;
 var img = "asset/earth";
 
-var date, name, phone, email;
+var date, name, phone, email,locn,indx=0;
