@@ -10,6 +10,8 @@ class Tickets extends StatefulWidget {
 }
 
 class _TicketsState extends State<Tickets> {
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,4 +80,5 @@ class _TicketsState extends State<Tickets> {
       )
     ]));
   }
+  
 }

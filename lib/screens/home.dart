@@ -6,6 +6,8 @@ import 'booking.dart';
 import 'package:gdscr22/globals.dart';
 import 'package:typewritertext/typewritertext.dart';
 import 'tickets.dart';
+import 'contacts.dart';
+
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
@@ -100,7 +102,17 @@ class _MyHomePageState extends State<MyHomePage> {
                             ctx: context),
                       );
                           }, child: Text("Your Tickets")),
-                      TextButton(onPressed: () {}, child: Text("Contact Us"))
+                      TextButton(onPressed: () {
+                        Navigator.push(
+                        context,
+                        PageTransition(
+                            type: PageTransitionType.size,
+                            alignment: Alignment.bottomCenter,
+                            child: contact(),
+                            inheritTheme: true,
+                            ctx: context),
+                      );
+                      }, child: Text("Contact Us"))
                     ])),
               ],
             ),
