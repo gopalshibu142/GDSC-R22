@@ -46,14 +46,15 @@ class _BookingState extends State<Booking> {
                   imagebg = AssetImage(images[i]);
                 });
               },
-              child: Container(
-                height: double.infinity,
+              
                 child: SafeArea(
                   child: SingleChildScrollView(
                     child: Center(
+                      
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
+                          SizedBox(height: 80,),
                           Text(
                             "Book Your Ticket",
                             style: TextStyle(color: Colors.white, fontSize: 35),
@@ -62,6 +63,9 @@ class _BookingState extends State<Booking> {
                             width: 280,
                             child: Column(children: [
                               TextFormField(
+                                onChanged: (str) {
+                                  name = str;
+                                },
                                 style: TextStyle(color: Colors.white70),
                                 decoration: const InputDecoration(
                                     hintText: "Enter your Fullname",
@@ -188,7 +192,13 @@ class _BookingState extends State<Booking> {
                                       onPressed: () {
                                         Navigator.pop(context);
                                       },
-                                      child: Text("cancel"))
+                                      child: Text("cancel")),
+                                      Spacer(),
+                                  OutlinedButton(
+                                  style: OutlinedButton.styleFrom(
+                                  side: BorderSide(width: 1.0, color: Colors.blue),
+  ),
+                                    onPressed: () {}, child: Text("Submit"))
                                 ],
                               )
                             ]),
@@ -198,7 +208,7 @@ class _BookingState extends State<Booking> {
                     ),
                   ),
                 ),
-              ))
+              )
         ],
       ),
     );

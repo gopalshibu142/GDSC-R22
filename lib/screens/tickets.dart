@@ -15,7 +15,16 @@ class _TicketsState extends State<Tickets> {
       body: 
       Stack(
         children: [
-          
+          Container(
+            decoration:const BoxDecoration(
+              color: Colors.black,
+              image: DecorationImage(fit: BoxFit.fitHeight,image: AssetImage("assets/tbg.jpg")),
+           
+            ),
+            child: SingleChildScrollView(
+              
+            ),
+          )
         ],
       ),
     );
